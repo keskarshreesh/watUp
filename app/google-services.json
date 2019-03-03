@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "102975181927",
+    "firebase_url": "https://watup-db.firebaseio.com",
+    "project_id": "watup-db",
+    "storage_bucket": "watup-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102975181927:android:eec6425239984a65",
+        "android_client_info": {
+          "package_name": "com.sdpd.watup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102975181927-lu0jbes55ge488hnuin42j5rc0dk8hvq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sdpd.watup",
+            "certificate_hash": "677b6b163eeef59612d99f28536265866fd7b138"
+          }
+        },
+        {
+          "client_id": "102975181927-aontu1jqm32ghf8d7jvtd3q5fnc9018b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKw2ePWrjtY_oRUAXjdgeZC1OET6Ea8Ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102975181927-aontu1jqm32ghf8d7jvtd3q5fnc9018b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
