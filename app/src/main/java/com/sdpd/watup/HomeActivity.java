@@ -70,6 +70,12 @@ public class HomeActivity extends FragmentActivity {
         mWaterControl = new WaterControl();
         mWaterLevelGraph = new WaterLevelGraph();
 
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.replace(R.id.main, mTankMeter);
+        fragmentTransaction.commit();
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 

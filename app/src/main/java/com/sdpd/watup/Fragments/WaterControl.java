@@ -39,7 +39,7 @@ public class WaterControl extends Fragment {
         seekBar = (SeekBar) view.findViewById(R.id.seekBar1);
         textView = (TextView) view.findViewById(R.id.textView1);
 
-        textView.setText("Covered: " + seekBar.getProgress() + "/" + seekBar.getMax());
+        textView.setText("Control Level: " + seekBar.getProgress() + "/" + seekBar.getMax());
 
         seekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
             int progress = 0;
@@ -47,18 +47,15 @@ public class WaterControl extends Fragment {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progresValue, boolean fromUser) {
                 progress = progresValue;
-                Toast.makeText(getActivity().getApplicationContext(), "Changing seekbar's progress", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getActivity().getApplicationContext(), "Started tracking seekbar", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                textView.setText("Covered: " + progress + "/" + seekBar.getMax());
-                Toast.makeText(getActivity().getApplicationContext(), "Stopped tracking seekbar", Toast.LENGTH_SHORT).show();
+                textView.setText("Control Level: " + progress + "/" + seekBar.getMax());
             }
         });
 
