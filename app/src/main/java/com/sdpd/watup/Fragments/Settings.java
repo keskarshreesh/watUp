@@ -29,7 +29,7 @@ public class Settings extends Fragment {
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_settings, container, false);
         onAutomaticButtonClicked(view);
-        
+
         return view;
     }
 
